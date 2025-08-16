@@ -1,0 +1,109 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #121212;
+  color: #E0E0E0;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #4F9DFF;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #2676d1;
+}
+
+#phrase {
+  font-size: 24px;  /* Aumenta o tamanho da fonte da frase */
+  margin: 20px 0;
+  font-weight: bold;
+  color: #B0B0B0;
+  text-align: center;
+}
+
+.squares {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+  max-width: 80%;
+}
+
+.square {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1E1E1E;
+}
+
+.square.correct {
+  background: #4CAF50;
+}
+
+.square.wrong {
+  background: #E53935;
+}
+
+#input {
+  padding: 15px;         /* aumenta a altura da box */
+  font-size: 24px;       /* aumenta a fonte do que é digitado */
+  margin-top: 15px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  width: 80%;            /* aumenta a largura */
+  max-width: 600px;      /* limite para telas grandes */
+  text-align: center;
+  background: #1E1E1E;
+  color: #E0E0E0;
+}
+
+#result {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#mini-table {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: #1E1E1E;
+  color: #E0E0E0;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  max-width: 200px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#mini-table div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+#mini-table div span:first-child {
+  font-weight: bold;
+}
